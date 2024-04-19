@@ -1,0 +1,157 @@
+@import url(reset.css);
+
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    color: #333;
+    line-height: 1.6;
+    font-size: 14px;
+}
+
+/* ----------- Top Block ----------- */
+.top {
+    height: 80px;
+    /* border-bottom: 5px solid red; */
+}
+
+.top-main {
+    width: 1100px;
+    height: 80px;
+    margin: 0 auto;
+}
+
+.top-main img {
+    float: left;
+    margin-top: 20px;
+}
+
+.top-main ul {
+    float: right;
+}
+
+.top-main li {
+    float: left;
+}
+
+.top-main li a {
+    /* border: 1px solid #000; */
+    display: block;
+    line-height: 78px; /* 扣掉 border-bottom(80-2)，讓底線在 top-main 的邊框之上 */
+    padding: 0 20px;
+    color: #333;
+    text-decoration: none;
+}
+
+.top-main li a:hover {
+    color: #02bfdb;
+    border-bottom: 2px solid #02bfdb;
+}
+
+/* ----------- Key Visual ----------- */
+.kv {
+    background-image: url(../img/kv_bg.png);
+    height: 550px;
+    background-position: center; /* 不論寬度多少，讓背景圖片維持置中 */
+    text-align: center;
+    color: white;
+}
+
+.kv img {
+    margin-top: 120px;
+}
+  
+.kv h1 {
+    font-size: 48px;
+}
+
+.kv h1 span {
+    font-weight: bold;
+}
+
+.kv h2 {
+    font-size: 24px;
+    margin-bottom: 30px;
+    text-transform: uppercase; /* 設定英文字母永遠大寫 */
+}
+
+.kv-form {
+    background-color: #fff;
+    width: 800px; /* 此寬度為 .kv-search 和 .kv-button 的寬度總和 */
+    padding: 20px;
+    margin: 0 auto; /* kv 裡面的 text-align: center; 沒辦法使 div 置中，因此需要使用 margin */
+
+    font-size: 0; /* 讓 .kv-search 和 .kv-button 之間的間距為 0 */
+}
+
+.kv-form .kv-search {
+    border: 1px solid #e5e5e5;
+    width: 700px;
+    height: 40px;
+    padding-left: 5px;
+    box-sizing: border-box; /* 讓邊框和 padding 不會影響寬度 */
+}
+
+.kv-form .kv-button {
+    width: 100px;
+    height: 40px;
+    border: 0;
+    background-color: #02bfdb;
+    color: white;
+}
+
+/* ----------- Main Content ----------- */
+.content {
+    /* text-align: center; */
+}
+
+.content-main {
+    width: 1170px;
+    margin: 0 auto;
+}
+
+.content-main h3 {
+    font-size: 24px;
+    margin-top: 80px;
+    text-align: center;
+}
+
+.content-main p {
+    margin-bottom: 50px;
+    text-align: center;
+}
+/* list */
+.content-list li {
+    border: 1px solid #ccc;
+    width: 370px;
+    text-align: center;
+
+    display: inline-block;
+    margin: 0 7px;
+    margin-bottom: 20px;
+}
+
+.content-list li a { /* a 為行內元素(小)，不會有寬高 */
+    color: #333;
+    text-decoration: none;
+
+    display: block; /* 改成區塊元素較符合此狀況，因為裡面有包 img h4 p */
+}
+
+.content-list li img {
+    margin-bottom: 10px;
+}
+
+.content-list li h4 {
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.content-list li p {
+    margin-bottom: 20px;
+}
+
+
+
+
+
+
+
